@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - ORELLA Nail Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo-title">
+    <a href="Home.html"><img src="logo.png" alt="ORELLA Logo"></a>
+    <h1>ORELLA NAIL STUDIO</h1>
+  </div>
+  <nav id="navbar">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="booking.html" class="active">Book</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="menu-toggle">☰</button>
+</header>
+
+<main>
+  <section class="form-section">
+    <h2>Book Your Appointment</h2>
+    <p class="form-intro">Fill out the form below and our team will confirm your appointment shortly.</p>
+
+    <form id="bookingForm" onsubmit="return validateBooking()">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <span id="nameError" class="error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <span id="emailError" class="error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Select Date</label>
+        <input type="date" id="date">
+        <span id="dateError" class="error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="service">Select Service</label>
+        <select id="service">
+          <option value="">--Choose Service--</option>
+          <option value="pressons">Press-ons</option>
+          <option value="extensions">Extensions</option>
+          <option value="manicure">Manicure</option>
+          <option value="pedicure">Pedicure</option>
+        </select>
+        <span id="serviceError" class="error"></span>
+      </div>
+
+      <button type="submit" class="btn">Book Now</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-contact">
+    <h4>Contact Us</h4>
+    <p>Email: info@orellanailstudio.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <div class="social-icons">
+      <a href="#"><img src="https://i.pinimg.com/1200x/00/8c/ea/008cea44dbe3c22991783b2530bb99f4.jpg" alt="Instagram"></a>
+      <a href="#"><img src="https://i.pinimg.com/736x/df/4b/71/df4b719d3f94148fad5c29db04e0a63c.jpg" alt="Facebook"></a>
+      <a href="#"><img src="https://i.pinimg.com/736x/b5/66/fa/b566fa1473df5b662b54babb764a46f2.jpg" alt="Twitter"></a>
+      <a href="#"><img src="https://i.pinimg.com/736x/71/72/53/717253e4de6621b80555d907c02a7397.jpg" alt="Pinterest"></a>
+    </div>
+  </div>
+  <p class="footer-bottom">&copy; 2025 ORELLA NAIL STUDIO | All Rights Reserved</p>
+</footer>
+</body>
+</html>
